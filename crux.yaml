@@ -1,0 +1,15 @@
+project:
+  name: "scaling-octo-bassoon"
+  description: ""
+  license: "ISC"
+  author: "Andy Friesen"
+
+targets:
+  "scaling-octo-bassoon":
+    src-dir: src
+    main-module: main
+
+tests:
+  "test":
+    src-dir: tests
+    main-module: main

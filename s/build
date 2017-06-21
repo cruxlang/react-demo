@@ -1,0 +1,1 @@
+s/crux compile src/main.cx > dist/main.js

@@ -1,0 +1,3 @@
+CRUX=$(cd ../../crux ; stack path --local-install-root)/bin/crux
+
+$CRUX $*
