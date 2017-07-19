@@ -1,0 +1,10 @@
+
+import react
+
+declare require<a>: fun (String) -> a
+
+let real_react_dom = require("react-dom")
+
+data Element {}
+
+export let render: (react.ReactElement, Element) => () = real_react_dom.render

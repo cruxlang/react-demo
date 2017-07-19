@@ -1,0 +1,21 @@
+
+declare require<a>: fun (String) -> a
+
+data JSXElement {}
+
+let real_react = require("react")
+
+export fun createClass(render) {
+    real_react.createClass({render: render})
+}
+
+export data ReactElement {}
+
+export fun text(s: String): ReactElement {
+    _unsafe_coerce(s)
+}
+
+export type Props = {
+}
+
+export let createElement: (String, Props, [ReactElement]) => ReactElement = real_react.createElement

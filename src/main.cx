@@ -1,4 +1,21 @@
 
+import react
+import react_dom
+
+let myApp = react.createClass(fun() {
+    react.createElement(
+        "div",
+        {},
+        [react.text("Hello from Crux!")]
+    )
+})
+
+let document = _unsafe_js("window.document")
+
 fun main() {
-    print("Hello!")
+    print("Hello World!")
+    react_dom.render(
+        react.createElement(myApp, {}, []),
+        document.getElementById("root")
+    )
 }

@@ -1,4 +1,14 @@
 
+import react
+
+let myApp = react.createClass(fun() {
+    react.createElement(
+        "div",
+        {},
+        react.text("Hello!")
+    )
+})
+
 fun main(){
-    
+
 }

@@ -1,1 +1,2 @@
 s/crux compile src/main.cx > dist/main.js
+./node_modules/.bin/webpack dist/main.js dist/bundle.js
